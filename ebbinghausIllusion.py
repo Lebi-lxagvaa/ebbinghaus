@@ -36,3 +36,8 @@ def ebbinghausIllusion(r_mitte=20, r_kleiner=10, r_grosser=30, anzahl_kleiner=10
     umringen(distanz_grosser, r_grosser, x1, y1,anzahl_grosser)
     zeichneKreis(x2,y2,r_mitte,Farbe_mitte,stift)
     umringen(distanz_kleiner, r_kleiner, x2, y2, anzahl_kleiner)
+    
+    ### TEST FÄLLE ###
+    ebbinghausIllusion(r_kleiner=10, r_grosser=30, anzahl_kleiner=10, anzahl_grosser=6,
+                 distanz_kleiner=40, distanz_grosser=70,
+                 Farbe_mitte='red', farbe_umringende='black')
