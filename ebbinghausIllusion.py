@@ -6,14 +6,15 @@ def ebbinghausIllusion(breite=600, hoehe=400, r_mitte=20,
     
     #Dependencies 
     import math
-    import ipyturtle3 as turtle
-    from ipyturtle3 import hold_canvas
-    myCanvas=turtle.Canvas(width=breite,height=hoehe)
-    display(myCanvas)
-    myTS=turtle.TurtleScreen(myCanvas)
-
-    myTS.bgcolor("lightblue")
-    myPen=turtle.Turtle(myTS)
+    import turtle
+    #from ipyturtle3 import hold_canvas
+    #myCanvas=turtle.Canvas(width=breite,height=hoehe)
+    #display(myCanvas)
+    #myTS=turtle.TurtleScreen(myCanvas)
+    #myTS.bgcolor("lightblue")
+    #sc = turtle.Screen()
+    #sc.setup(400,300)
+    myPen=turtle.Turtle()
     
     #Koordinaten von mittleren kreisen
     x1, y1 = -distanz_grosser, 0
@@ -45,4 +46,6 @@ def ebbinghausIllusion(breite=600, hoehe=400, r_mitte=20,
     umringen(distanz_kleiner, r_kleiner, x2, y2, anzahl_kleiner)
     
     
-    
+ebbinghausIllusion(r_kleiner=10, r_grosser=30, anzahl_kleiner=10, anzahl_grosser=6,
+                 distanz_kleiner=40, distanz_grosser=70,
+                 Farbe_mitte='red', farbe_umringende='black')
