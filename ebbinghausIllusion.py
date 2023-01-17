@@ -9,7 +9,7 @@ def ebbinghausIllusion(r_mitte=20, r_kleiner=10, r_grosser=30, anzahl_kleiner=10
     stift=turtle.Turtle()
     
     #Koordinaten von mittleren kreisen
-    x1, y1 = -distanz_grosser, 0
+    x1, y1 = -r_umring_grosser, 0
     x2, y2 = x1 + graph_distanz, y1
     
     def zeichneKreis(x, y, radius, farbe, zeichne):
